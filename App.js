@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import './src/config/StatusBarConfig'
 
 import Main from './src/pages/main'
+import Product from './src/pages/product'
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
             }}
       >
         <Stack.Screen name="JSHunt" component={Main} />
+        <Stack.Screen name="Product" component={Product} />
       </Stack.Navigator>
     </NavigationContainer>
   );
